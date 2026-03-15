@@ -99,6 +99,23 @@ webTablesPage.verifyUserNotExist("Test")
 
 })
 
+it.only("Negative Case - Salary Di input menggunakan huruf", () => {
+
+WebTablesPage.visit()
+WebTablesPage.clickAdd()
+WebTablesPage.fillFirstName("Test")
+WebTablesPage.fillLastName("User")
+WebTablesPage.fillEmail("testuser@example.com")
+WebTablesPage.fillAge("25")
+webTablesPage.fillSalary("five thousand")
+WebTablesPage.fillDepartment("IT")
+WebTablesPage.submit()
+webTablesPage.VerifyFieldSalaryError()
+webTablesPage.VerifyRegistrationformvisible()
+webTablesPage.verifyUserNotExist("Test")
+
+})
+
 it("Negative Case - Department dikosongkan", () => {
 WebTablesPage.visit()
 WebTablesPage.clickAdd()
