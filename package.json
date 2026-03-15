@@ -1,0 +1,20 @@
+{
+  "name": "Cypres Automation untuk Technical Test Mursyid Salim",
+  "version": "1.0.0",
+  "author": "Mursyid Salim ",
+  "description": "Cypress Automation Untuk DemoQA website",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.1",
+    "cypress": "^15.12.0",
+    "cypress-dragndrop-kit": "^1.1.0",
+    "neat-csv": "^7.0.0"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.15.0",
+    "papaparse": "^5.5.3"
+  }
+}
