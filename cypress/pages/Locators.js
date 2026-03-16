@@ -1,7 +1,6 @@
 export const Locator = {
+    // Webtables
     linkWebtables: 'https://demoqa.com/webtables',
-    linkresizable: 'https://demoqa.com/resizable',
-    linkdroppable: 'https://demoqa.com/droppable',
     addButton: '#addNewRecordButton',
     firstNameInput: '#firstName',
     lastNameInput: '#lastName',
@@ -11,8 +10,12 @@ export const Locator = {
     departmentInput: '#department',
     submitButton: '#submit',
     table: 'table',
+    // Resizable
+    linkresizable: 'https://demoqa.com/resizable',
     buttonresizebox: '#resizableBoxWithRestriction > .react-resizable-handle',
     resizableBox: '#resizableBoxWithRestriction',
+    // Droppable
+    linkdroppable: 'https://demoqa.com/droppable',
     draggable: '#draggable',
     droppable: '#droppable'
 }
