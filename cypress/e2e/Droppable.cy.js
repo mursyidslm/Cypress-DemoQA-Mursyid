@@ -13,6 +13,6 @@ describe("Drag and Drop", () => {
     .trigger("mousemove", { clientX: 1000, clientY: 300})
     .trigger("mouseup", { force: true });
 
-    // cy.get("#droppable").should("contain", "Dropped!");
+    cy.get("#droppable").should("contain", "Dropped!");
   });
 });

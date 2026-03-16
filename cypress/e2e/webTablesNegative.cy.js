@@ -99,7 +99,7 @@ webTablesPage.verifyUserNotExist("Test")
 
 })
 
-it.only("Negative Case - Salary Di input menggunakan huruf", () => {
+it("Negative Case - Salary Di input menggunakan huruf", () => {
 
 WebTablesPage.visit()
 WebTablesPage.clickAdd()
