@@ -53,7 +53,7 @@ webTablesPage.verifyUserNotExist("Test")
 })
 
 emailinvalid.forEach((email) => {
-it.only("Negative Case - invalid email: " + email, () => {
+it("Negative Case - invalid email: " + email, () => {
 
 WebTablesPage.visit()
 WebTablesPage.clickAdd()
