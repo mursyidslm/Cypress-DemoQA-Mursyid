@@ -1,6 +1,7 @@
 
 import webTablesPage from "../pages/webTablesPage"
 import WebTablesPage from "../pages/webTablesPage"
+import { emailinvalid } from "../fixtures/emailinvalid"
 
 describe("WebTables Bulk Register Negative Case", () => {
 
@@ -51,13 +52,14 @@ webTablesPage.verifyUserNotExist("Test")
 
 })
 
-it("Negative Case - email diisi menggunakan format yang tidak valid", () => {
+emailinvalid.forEach((email) => {
+it.only("Negative Case - invalid email: " + email, () => {
 
 WebTablesPage.visit()
 WebTablesPage.clickAdd()
 WebTablesPage.fillFirstName("Test")
 WebTablesPage.fillLastName("User")
-WebTablesPage.fillEmail("testuserexample.com")
+WebTablesPage.fillEmail(email)
 WebTablesPage.fillAge("25")
 WebTablesPage.fillSalary("5000")
 WebTablesPage.fillDepartment("IT")
@@ -129,5 +131,6 @@ webTablesPage.VerifyFieldDepartmentError()
 webTablesPage.VerifyRegistrationformvisible()
 webTablesPage.verifyUserNotExist("Test")
 
+})
 })
 })
